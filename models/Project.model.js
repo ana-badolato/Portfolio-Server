@@ -33,5 +33,13 @@ const projectSchema = new Schema(
       type: Boolean,
       default: false
     }
+  },
+  {
+    // this second object adds extra properties: `createdAt` and `updatedAt`
+    timestamps: true,
   }
-)
+);
+
+const Project = model("Project", projectSchema);
+
+module.exports = Project;
