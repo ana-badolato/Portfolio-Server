@@ -13,7 +13,7 @@ const projectSchema = new Schema(
     description: {
       type: String
     },
-    Category: {
+    category: {
       type: String,
       enum: ["Web Development", "UX/UI"]
     },
@@ -35,7 +35,6 @@ const projectSchema = new Schema(
     }
   },
   {
-    // this second object adds extra properties: `createdAt` and `updatedAt`
     timestamps: true,
   }
 );
